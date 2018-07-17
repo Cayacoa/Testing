@@ -22,7 +22,7 @@ public class BooleanOperators {
     
 public static void compareWithY(){
 
-            int Big = 5;
+        int Big = 5;
         int small = 3;
     
  // The following expression uses the "and" Boolean operator
@@ -47,6 +47,18 @@ int Big = 5;
 int small = 3;
 
 
+/*
+
+
+Great! The second Boolean operator that we will explore is called or.
+
+The or operator is represented in Java by ||.
+It returns a Boolean value of true when at least one expression on either side of || is true.
+The code below shows all the outcomes of the Boolean operator ||:
+
+*/
+
+
 //The "or" Boolean operator:
 System.out.println(false || false); // prints false
 System.out.println(false || true); // prints true
@@ -62,7 +74,44 @@ System.out.println(Big > small || small > Big);
 System.out.print("\n");
     
 }  
-   
+
+public static void exclamationSign(){
+    
+/*
+    
+    Fantastic! The final Boolean operator we will explore is called not.
+
+The not operator is represented in Java by !.
+It will return the opposite of the expression immediately after it.
+It will return false if the expression is true, and true if the expression is false.
+The code below shows all the outcomes of the Boolean operator !:
+    
+    
+*/    
+    
+
+//The "not" Boolean operator:
+
+System.out.println(!false); // prints true
+System.out.println(!true); // prints false
+
+
+//We can also use the Boolean operator ! with Boolean expressions such as the following:
+
+System.out.println( !(4 <= 10) );
+
+
+/*
+The example above will print out false because the statement
+"4 is less than or equal to 10" is true, but the ! operator
+will return the opposite value, which is false
+
+
+*/
+
+    
+}
+
 public static void precedence(){
     
     /*
